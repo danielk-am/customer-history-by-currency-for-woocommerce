@@ -1,5 +1,5 @@
 === Customer History by Currency for WooCommerce ===
-Contributors: danielk-am
+Contributors: danielkam1
 Tags: woocommerce, multi-currency, orders, customers, currency
 Requires at least: 6.9
 Tested up to: 7.1

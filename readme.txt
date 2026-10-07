@@ -4,7 +4,7 @@ Tags: woocommerce, multi-currency, orders, customers, currency
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,5 +91,8 @@ It reads the currency saved on each order, so it does not depend on a particular
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 - 2026-10-07 =
+* Corrects the contributor name in the readme. Nothing changes in how the plugin works.
+
+= 1.0.0 - 2026-10-07 =
 * First release. Lists Customer history totals and averages per currency.

@@ -3,7 +3,7 @@
  * Plugin Name:          Customer History by Currency for WooCommerce
  * Plugin URI:           https://github.com/danielk-am/customer-history-by-currency-for-woocommerce
  * Description:          Shows a customer's order totals and averages per currency in the Customer history box on the edit order screen, instead of one total that adds different currencies together.
- * Version:              1.0.0
+ * Version:              1.0.1
  * Requires at least:    6.9
  * Requires PHP:         7.4
  * Requires Plugins:     woocommerce

@@ -12,3 +12,4 @@
 /*.zip
 .DS_Store
 /bin
+.phpunit.result.cache

@@ -1,0 +1,14 @@
+/.git
+/.github
+/.gitignore
+/.distignore
+/.wordpress-org
+/design
+/tests
+/build
+/phpunit.xml.dist
+/phpcs.xml.dist
+/README.md
+/*.zip
+.DS_Store
+/bin

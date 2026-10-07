@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory banner source</title>
+<!--
+	Source for the WordPress.org directory banner. Render it at 1544x500, and again with
+	?scale=0.5 at 772x250, so both sizes come from this one layout:
+
+	python3 render_page.py design/banner.html .wordpress-org/banner-1544x500.png --width 1544 --height 500
+	python3 render_page.py "design/banner.html?scale=0.5" .wordpress-org/banner-772x250.png --width 772 --height 250
+
+	The mock on the right repeats the amounts in .wordpress-org/screenshot-1.png.
+-->
+<style>
+	/* danielk.am colour tokens, v2. */
+	:root {
+		--surface: #FFFFFF;
+		--backdrop: #EDF3FF;
+		--ink: #153847;
+		--muted: #526B78;
+		--brand: #2563EB;
+		--border: #D7E5EA;
+		--font: system-ui, sans-serif;
+	}
+
+	* { box-sizing: border-box; }
+
+	html, body { margin: 0; }
+
+	body {
+		position: relative;
+		width: 1544px;
+		height: 500px;
+		overflow: hidden;
+		background: var(--backdrop);
+		color: var(--ink);
+		font-family: var(--font);
+	}
+
+	.copy {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 96px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 760px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 72px;
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		line-height: 1.05;
+	}
+
+	.copy__for {
+		margin: 14px 0 0;
+		color: var(--brand);
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+	}
+
+	.copy__line {
+		max-width: 660px;
+		margin: 28px 0 0;
+		color: var(--muted);
+		font-size: 28px;
+		line-height: 1.3;
+	}
+
+	/* A drawn copy of the Customer history box, so it stays sharp at both sizes. */
+	.mock {
+		position: absolute;
+		top: 24px;
+		left: 908px;
+		width: 548px;
+		padding: 28px 36px 30px;
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		background: var(--surface);
+		box-shadow: 0 24px 60px rgba(21, 56, 71, 0.12);
+	}
+
+	.mock__title {
+		margin: 0 -36px 20px;
+		padding: 0 36px 20px;
+		border-bottom: 1px solid var(--border);
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+	.mock__label {
+		margin: 16px 0 2px;
+		font-size: 23px;
+		font-weight: 700;
+	}
+
+	.mock__value {
+		font-size: 29px;
+		line-height: 1.35;
+	}
+
+	.mock__value b {
+		color: var(--brand);
+		font-weight: 600;
+	}
+
+	.mock__value small {
+		color: var(--muted);
+		font-size: 23px;
+	}
+</style>
+</head>
+<body>
+	<div class="copy">
+		<h1>Customer History<br>by Currency</h1>
+		<p class="copy__for">for WooCommerce</p>
+		<p class="copy__line">See what each customer has spent in each currency, right on the order screen.</p>
+	</div>
+
+	<div class="mock" aria-hidden="true">
+		<div class="mock__title">Customer history</div>
+		<div class="mock__label" style="margin-top:0">Total orders</div>
+		<div class="mock__value">3</div>
+		<div class="mock__label">Total revenue</div>
+		<div class="mock__value">€51.90 <b>EUR</b> <small>(2 orders)</small></div>
+		<div class="mock__value">£36.00 <b>GBP</b> <small>(1 order)</small></div>
+		<div class="mock__label">Average order value</div>
+		<div class="mock__value">€25.95 <b>EUR</b></div>
+		<div class="mock__value">£36.00 <b>GBP</b></div>
+	</div>
+
+	<script>
+		// ?scale=0.5 renders the 772x250 banner from the same layout.
+		const scale = new URLSearchParams( location.search ).get( 'scale' );
+		if ( scale ) {
+			document.documentElement.style.zoom = scale;
+		}
+	</script>
+</body>
+</html>

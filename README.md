@@ -1,3 +1,5 @@
+![Customer History by Currency for WooCommerce: see what each customer has spent in each currency, right on the order screen](.wordpress-org/banner-1544x500.png)
+
 # Customer History by Currency for WooCommerce
 
 See what each customer has spent in each currency, right on the WooCommerce order screen.

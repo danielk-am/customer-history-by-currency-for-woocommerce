@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory icon source</title>
+<!--
+	Renders .wordpress-org/icon.svg to the PNG sizes WordPress.org asks for:
+
+	python3 render_page.py design/icon.html .wordpress-org/icon-256x256.png --width 256 --height 256
+	python3 render_page.py design/icon.html .wordpress-org/icon-128x128.png --width 128 --height 128
+-->
+<style>
+	html, body { margin: 0; background: transparent; }
+	/* Sized by the viewport height: headless Chrome keeps a minimum window width, so 100vw would be wider than the icon. */
+	img { display: block; width: 100vh; height: 100vh; }
+</style>
+</head>
+<body>
+	<img src="../.wordpress-org/icon.svg" alt="">
+</body>
+</html>

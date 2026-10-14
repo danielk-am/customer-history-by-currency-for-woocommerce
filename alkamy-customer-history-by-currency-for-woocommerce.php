@@ -26,8 +26,8 @@ defined( 'ABSPATH' ) || exit;
 
 // The original GitHub package has a different install path but shares this class.
 // Check active plugins before loading it, regardless of WordPress's plugin load order.
-$chbc_legacy_plugin = 'customer-history-by-currency-for-woocommerce/customer-history-by-currency-for-woocommerce.php';
-if ( in_array( $chbc_legacy_plugin, (array) get_option( 'active_plugins', array() ), true ) || isset( get_site_option( 'active_sitewide_plugins', array() )[ $chbc_legacy_plugin ] ) || class_exists( Customer_History::class, false ) ) {
+$alkamy_chbc_legacy_plugin = 'customer-history-by-currency-for-woocommerce/customer-history-by-currency-for-woocommerce.php';
+if ( in_array( $alkamy_chbc_legacy_plugin, (array) get_option( 'active_plugins', array() ), true ) || isset( get_site_option( 'active_sitewide_plugins', array() )[ $alkamy_chbc_legacy_plugin ] ) || class_exists( Customer_History::class, false ) ) {
 	add_action(
 		'admin_notices',
 		static function (): void {

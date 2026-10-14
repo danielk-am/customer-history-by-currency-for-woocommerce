@@ -28,7 +28,7 @@ require_once $chbc_tests_dir . '/includes/functions.php';
 tests_add_filter(
 	'muplugins_loaded',
 	static function () {
-		require dirname( __DIR__ ) . '/customer-history-by-currency-for-woocommerce.php';
+		require dirname( __DIR__ ) . '/alkamy-customer-history-by-currency-for-woocommerce.php';
 	},
 	20
 );

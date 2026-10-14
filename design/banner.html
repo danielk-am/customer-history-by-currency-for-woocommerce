@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Directory banner source</title>
+<title>Alkamy Customer History by Currency for WooCommerce</title>
 <!--
 	Source for the WordPress.org directory banner. Render it at 1544x500, and again with
 	?scale=0.5 at 772x250, so both sizes come from this one layout:
@@ -13,14 +13,14 @@
 	The mock on the right repeats the amounts in .wordpress-org/screenshot-1.png.
 -->
 <style>
-	/* danielk.am colour tokens, v2. */
+	/* Alkamy Holdings brand, from the canonical logo asset README. */
 	:root {
 		--surface: #FFFFFF;
-		--backdrop: #EDF3FF;
-		--ink: #153847;
-		--muted: #526B78;
-		--brand: #2563EB;
-		--border: #D7E5EA;
+		--backdrop: #FAF8F3;
+		--ink: #16161A;
+		--muted: #5E5A52;
+		--brand: #9A6F1E;
+		--border: #E5DED2;
 		--font: system-ui, sans-serif;
 	}
 
@@ -50,9 +50,9 @@
 	}
 
 	.copy img {
-		width: 72px;
-		height: 72px;
-		margin-bottom: 26px;
+		width: 260px;
+		height: auto;
+		margin-bottom: 32px;
 	}
 
 	h1 {
@@ -89,7 +89,7 @@
 		border: 1px solid var(--border);
 		border-radius: 16px;
 		background: var(--surface);
-		box-shadow: 0 24px 60px rgba(21, 56, 71, 0.12);
+		box-shadow: 0 24px 60px rgba(22, 22, 26, 0.10);
 	}
 
 	.mock__title {
@@ -124,7 +124,7 @@
 </head>
 <body>
 	<div class="copy">
-		<img src="../.wordpress-org/icon.svg" alt="">
+		<img src="alkamy-logo.svg" alt="">
 		<h1>Customer History<br>by Currency</h1>
 		<p class="copy__for">for WooCommerce</p>
 		<p class="copy__line">See what each customer has spent in each currency, right on the order screen.</p>

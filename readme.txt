@@ -1,10 +1,10 @@
-=== Customer History by Currency for WooCommerce ===
+=== Alkamy Customer History by Currency for WooCommerce ===
 Contributors: danielkam1
 Tags: woocommerce, multi-currency, orders, customers, currency
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ See what each customer has spent in each currency on the WooCommerce order scree
 
 == Description ==
 
-See what each customer has spent in each currency, right on the WooCommerce order screen.
+See what each customer has spent in each currency, right on the WooCommerce order screen. Developed and maintained by [Alkamy](https://alkamy.ltd).
 
 = The problem =
 
@@ -61,6 +61,8 @@ This plugin exists so stores can have the fix now. If you would rather see it bu
 
 There is nothing to configure.
 
+If you previously installed the GitHub version under the customer-history-by-currency-for-woocommerce folder, deactivate and delete that copy before activating this Alkamy version. The plugin stores no data, so this does not remove your orders or history.
+
 == Frequently Asked Questions ==
 
 = Does it convert currencies? =
@@ -90,6 +92,11 @@ It reads the currency saved on each order, so it does not depend on a particular
 3. WooCommerce alone, for comparison: euros and pounds added into one total.
 
 == Changelog ==
+
+= 1.0.2 - 2026-10-14 =
+* Rebrands the plugin and directory assets under Alkamy.
+* Uses the Alkamy directory slug and translation domain. Customer history behaviour is unchanged.
+* Prevents a class collision when the original GitHub version is still active and shows a migration notice.
 
 = 1.0.1 - 2026-10-07 =
 * Corrects the contributor name in the readme. Nothing changes in how the plugin works.

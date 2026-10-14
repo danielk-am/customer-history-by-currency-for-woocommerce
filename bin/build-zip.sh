@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Builds build/customer-history-by-currency-for-woocommerce.zip from the files that ship,
+# Builds build/alkamy-customer-history-by-currency-for-woocommerce.zip from the files that ship,
 # leaving out everything listed in .distignore.
 set -euo pipefail
 
-slug="customer-history-by-currency-for-woocommerce"
+slug="alkamy-customer-history-by-currency-for-woocommerce"
 root="$(cd "$(dirname "$0")/.." && pwd)"
 stage="$(mktemp -d)"
 

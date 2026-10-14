@@ -200,7 +200,7 @@ final class Customer_History {
 					esc_html(
 						sprintf(
 							/* translators: %s: number of orders in one currency */
-							_n( '(%s order)', '(%s orders)', $currency_history['count'], 'customer-history-by-currency-for-woocommerce' ),
+							_n( '(%s order)', '(%s orders)', $currency_history['count'], 'alkamy-customer-history-by-currency-for-woocommerce' ),
 							number_format_i18n( $currency_history['count'] )
 						)
 					)

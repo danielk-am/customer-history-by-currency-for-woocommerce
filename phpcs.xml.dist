@@ -17,7 +17,7 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="customer-history-by-currency-for-woocommerce"/>
+				<element value="alkamy-customer-history-by-currency-for-woocommerce"/>
 			</property>
 		</properties>
 	</rule>

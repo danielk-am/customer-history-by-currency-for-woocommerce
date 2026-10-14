@@ -1,8 +1,10 @@
-![Customer History by Currency for WooCommerce: see what each customer has spent in each currency, right on the order screen](.wordpress-org/banner-1544x500.png)
+![Alkamy Customer History by Currency for WooCommerce: see what each customer has spent in each currency, right on the order screen](.wordpress-org/banner-1544x500.png)
 
-# Customer History by Currency for WooCommerce
+# Alkamy Customer History by Currency for WooCommerce
 
 See what each customer has spent in each currency, right on the WooCommerce order screen.
+
+Developed and maintained by [Alkamy](https://alkamy.ltd).
 
 | WooCommerce alone | With this plugin |
 | --- | --- |
@@ -14,7 +16,7 @@ The **Customer history** box on the edit order screen adds up a customer's order
 
 On a store that trades in euros, a customer with orders of €41.90, €10.00 and £36.00 shows a total of **€87.90**. Euros and pounds are added as if they were one unit, then labelled with the store's symbol. The average order value is worked out from the same sum. No exchange rate makes either number right.
 
-This is [WooCommerce issue #43781](https://github.com/woocommerce/woocommerce/issues/43781), reported in January 2024. I reproduced it on WooCommerce 11.1.2.
+This is [WooCommerce issue #43781](https://github.com/woocommerce/woocommerce/issues/43781), reported in January 2024. It was reproduced on WooCommerce 11.1.2.
 
 ## What the plugin does
 
@@ -43,7 +45,7 @@ It is built to stay out of the way:
 - WooCommerce 10.8 or later, with High-Performance Order Storage switched on. On legacy order storage the plugin changes nothing.
 - WooCommerce Analytics enabled. WooCommerce only shows the Customer history box when it is.
 - WordPress 6.9 or later and PHP 7.4 or later.
-- Tested on WooCommerce 11.1.2 and 11.3.0-dev, with WordPress 7.1.2. It has not been tested against specific multi-currency plugins yet.
+- Tested on WooCommerce 11.1.2 and 11.3.0-dev, with WordPress 7.1.2. The Alkamy 1.0.2 package was also verified on WordPress 7.1.3 with WooCommerce 11.1.2 and PHP 8.3.33. It has not been tested against specific multi-currency plugins yet.
 - If your theme replaces WooCommerce's `order/customer-history.php` template, the plugin only acts when that template still prints the standard total and average.
 
 ## Want this in WooCommerce itself?
@@ -58,8 +60,10 @@ This plugin exists so stores can have the fix now, without waiting on a change t
 
 1. Download the ZIP from this repository's releases.
 2. In WordPress, go to **Plugins > Add Plugin > Upload Plugin** and upload it.
-3. Activate **Customer History by Currency for WooCommerce**.
+3. Activate **Alkamy Customer History by Currency for WooCommerce**.
 4. Open any order for a customer who has paid in more than one currency.
+
+If you have the original GitHub version installed, deactivate and delete it before activating this Alkamy version. The plugin stores no data; your orders and customer history remain in WooCommerce.
 
 ## Screenshots
 
